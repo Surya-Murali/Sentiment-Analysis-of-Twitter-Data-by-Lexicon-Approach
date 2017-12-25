@@ -1,33 +1,3 @@
-#This is the code we are going to go through in this section. Copy and paste it into R and follow along with the videos.
-
-#################################################
-
-# SENTIMENT ANALYSIS
-
-# is used to see if a text is neutral, positive or negative
-# emotion analysis is used to see which emotion a text has  (happy, fear, anger)
-# both are using similar codes but the comparison lexicon is different
-
-# example: What is the sentiment towards my company?
-
-# Twitter data is useful for that type of analysis because: 
-# high volumes (500 mill/day) 
-# short messages like sms - 140 words
-# special strings (hashtags) 
-# but creative word usage makes it hard for analysis, spelling mistakes 
-
-## there is TONS of sentiment in it!
-
-# example of text sentiments:
-
-# 1.  Udemy provides great opportunity for life long learning - both words would hint for pos
-# 2. Udemy is too expensive and slow - both words would hint towards neg sentiment
-# 3. Udemy is a learning platform - neutral sentiment
-# 4. Problem: what? - Udemy is a fast platform? - sarcasm is hard to analyise
-
-# Sentiment Lexicon: a list of words which you are using to compare your scraped txt with
-
-# Hu Liu Lexicon got the standard of sentiment analysis lately  
 # list of pos and negative words - manually created - approx. 6800 
 
 # download the txt files to your wd
@@ -48,7 +18,6 @@ library("sentimentr")
 
 
 #----
-
 # score.sentiment = function(sentences, pos.words, neg.words, .progress='none')
 # {
 #   require(plyr)
@@ -174,20 +143,21 @@ library("httr")
 library("tm")
 library("SnowballC")
 
-key = "5ECBtAnsp3kErElYRzViOLNDw"
+key = ""
 
-secret = "zYGwPa14vDAOcnOR1cCg3mOnjZFkFeyLmkxlzTWnzNn7wLdOva"
+secret = ""
 
-accessToken = "2179932235-Deu3ugJVB9eyrwR52JMAAsAETvsCcJ7yknovCZj"
+accessToken = ""
 
-accessTokenSecret = "ukhUYD2YtImCFpbSprzBMt1wwExbvQUm5qsizOO7SHTAn"
+accessTokenSecret = ""
 
 setup_twitter_oauth(key,secret,accessToken,accessTokenSecret)
 
 
 # tweets for country
-usatweets = searchTwitter("usa", n=900, lang="en", since = "2017-12-10", until = "2017-12-10")
-indiatweets = searchTwitter("#RohitSharma", n=900, lang="en")
+#usatweets = searchTwitter("#usa", n=900, lang="en", since = "2017-12-10", until = "2017-12-10")
+usatweets = searchTwitter("#usa", n=900, lang="en")
+indiatweets = searchTwitter("#india", n=900, lang="en")
 russiatweets = searchTwitter("russia", n=900, lang="en")
 chinatweets = searchTwitter("china", n=900, lang="en")
 
@@ -273,4 +243,3 @@ myindex = which(mytest == "dfd")
 mytest[-myindex]
 
 tweettext2 = which(tweettext == "amp")
-
