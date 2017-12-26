@@ -15,16 +15,20 @@ It is provided by Hu & Liu and has [Positive](https://github.com/Surya-Murali/An
 Example:
 
 mytest= c("I love John Cena", "Cute cat!", "That was a bad night", "She loves bad boys")
+
 testsentiment = score.sentiment(mytest, pos, neg)
+
 testsentiment
 
 Output:
-                     text          score
- 1       I love John Cena              1
- 2              Cute cat!              1
- 3   That was a bad night             -1
- 4     She loves bad boys              0
- 
+
+|     | text                 | score  |
+|:---:|:--------------------:|:------:|
+|  1  | I love John Cena     |    1   |
+|  2  | Cute cat!            |    1   |
+|  3  | That was a bad night |   -1   |
+|  4  | She loves bad boys   |    0   |
+
  **Note :** 
 * The code for Twitter-R connection and analysis can be found [here](https://github.com/Surya-Murali/Analysis-by-Lexicon-Approach/blob/master/LexiconBasedAnalysis.R)
 * The [results](https://github.com/Surya-Murali/Analysis-by-Lexicon-Approach/tree/master/Outputs) are shown in the form of as Box Plots, histograms and Word Clouds
