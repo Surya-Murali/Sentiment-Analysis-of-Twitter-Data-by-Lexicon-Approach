@@ -15,8 +15,12 @@ It is provided by Hu & Liu and has [Positive](https://github.com/Surya-Murali/An
 Example:
 
 >mytest= c("I love John Cena", "Cute cat!", "That was a bad night", "She loves bad boys")
+
 >testsentiment = score.sentiment(mytest, pos, neg)
+
 >testsentiment
+
+
 Output:
                    text        score
  1     I love John Cena            1
@@ -29,3 +33,4 @@ Output:
 * The [results](https://github.com/Surya-Murali/Analysis-by-Lexicon-Approach/tree/master/Outputs) are shown in the form of as Box Plots, histograms and Word Clouds
 * Twitter allows only 15 scrapes in 15 minutes
 * The Twitter Search API searches against a sampling of recent Tweets published in the past 7 days. So only tweets in the last 7 days can be mined
+* Merry Christmas :P
