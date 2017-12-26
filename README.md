@@ -15,9 +15,7 @@ It is provided by Hu & Liu and has [Positive](https://github.com/Surya-Murali/An
 Example:
 
 >mytest= c("I love John Cena", "Cute cat!", "That was a bad night", "She loves bad boys")
-
 >testsentiment = score.sentiment(mytest, pos, neg)
-
 >testsentiment
 
 
