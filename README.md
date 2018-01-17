@@ -1,4 +1,4 @@
-# Analysis-by-Lexicon-Approach
+# Sentiment-Analysis-of-Twitter-Data-by-Lexicon-Approach
 
 This project uses Lexicon-based approach for sentimental analysis of 1000 recent tweets of 4 countries - USA, India, China and Syria.
 The general idea is to calculate a sentiment score for each tweet and thereby find out how positive or negative the tweet is.
